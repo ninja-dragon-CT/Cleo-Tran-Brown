@@ -3504,6 +3504,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: a656d097d5ac93b4cabeb8a33bbe1bca, type: 3}
   m_PrefabInstance: {fileID: 421225101}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1675807242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675807241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272af827e215f3a49867ec1ec81adae3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
 --- !u!136 &1675807244
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4678,7 +4691,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 4
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &5552263534300667589
 Canvas:
   m_ObjectHideFlags: 0
