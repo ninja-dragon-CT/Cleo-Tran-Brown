@@ -6,7 +6,7 @@ public class Movement : MonoBehaviour
 {
     Rigidbody rb;
 
-    float speed = 2;
+    public float speed = 5;
 
     bool canRotateR;
     bool canRotateL;
