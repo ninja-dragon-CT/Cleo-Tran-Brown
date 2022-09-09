@@ -16,6 +16,6 @@ public class PlayerMovement : MonoBehaviour
     {
         //translate character in the direction of the input keys 
         move = new Vector3(Input.GetAxisRaw("Horizontal"),0, Input.GetAxisRaw("Vertical"));
-        transform.Translate(move * 4* speed *3 * Time.deltaTime);
+        transform.Translate(move *  2* speed *2 * Time.deltaTime);
     }
 }
