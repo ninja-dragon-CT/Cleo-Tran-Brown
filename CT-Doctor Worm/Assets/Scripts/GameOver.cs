@@ -17,7 +17,7 @@ public class GameOver : MonoBehaviour
     private void Awake()
     {
         teleporterAudio = GetComponent<AudioSource>();
-        teleporterAudio.clip = teleportHum;
+        //teleporterAudio.clip = teleportHum;
         teleporterAudio.volume = 0.4f;
         teleporterAudio.Play();
     }
@@ -46,7 +46,8 @@ public class GameOver : MonoBehaviour
 
         if (playerTouchedLaser)
         {
-            RestartLevel();
+            animator.SetTrigger("PlayerHit");
+            Invoke("RestartLevel", 5);
         }
     }
 

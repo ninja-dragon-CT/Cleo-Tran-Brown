@@ -1203,6 +1203,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2275586455565686364, guid: 0b03b6f3eb5a8bf42beb5861b41a14b9, type: 3}
+      propertyPath: lasersAreOff
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6479710904597252832, guid: 0b03b6f3eb5a8bf42beb5861b41a14b9, type: 3}
       propertyPath: m_RootOrder
       value: 16
