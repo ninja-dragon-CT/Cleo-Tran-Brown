@@ -16,10 +16,10 @@ public class GameOver : MonoBehaviour
 
     private void Awake()
     {
-        teleporterAudio = GetComponent<AudioSource>();
+        //teleporterAudio = GetComponent<AudioSource>();
         //teleporterAudio.clip = teleportHum;
-        teleporterAudio.volume = 0.4f;
-        teleporterAudio.Play();
+        //teleporterAudio.volume = 0.4f;
+        //teleporterAudio.Play();
     }
 
     // Start is called before the first frame update
