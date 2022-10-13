@@ -1372,8 +1372,8 @@ MonoBehaviour:
   speed: 5
   projectileForce: 0.1
   fireRate: 0.1
-  currentLevel: 10
-  playerHealth: 100
+  currentLevel: 0
+  playerHealth: 500
   score: 0
   gameOver: 0
   projectile: {fileID: 1702623318685341940, guid: dec1d9b2efa0ca541b0a2ea4c3e44f26, type: 3}
