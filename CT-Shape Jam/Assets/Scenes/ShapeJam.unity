@@ -1369,10 +1369,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84b0cbeb87a094442b2947493dbf8c96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 7
   projectileForce: 0.1
   fireRate: 0.1
-  currentLevel: 0
+  currentLevel: 7
   playerHealth: 500
   score: 0
   gameOver: 0
