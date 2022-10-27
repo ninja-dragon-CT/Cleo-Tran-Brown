@@ -13,7 +13,7 @@ public class EndGame : MonoBehaviour
 
     void OnTriggerEnter(Collider other){
         //if go through the exit, play the star particle system
-        if(other.gameObject.CompareTag("Player")){
+        if (other.gameObject.CompareTag("Player")) {
             stars.Play();
             Destroy(this);
         }

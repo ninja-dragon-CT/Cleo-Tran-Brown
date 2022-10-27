@@ -6,7 +6,6 @@ using UnityEngine.AI;
 public class End : MonoBehaviour
 {
     public Transform goal;
-    private Transform key;
     private Transform end;
     private Animator animator;
     public NavMeshAgent agent;
@@ -16,7 +15,6 @@ public class End : MonoBehaviour
         //animator = GetComponentInChildren<Animator>();
         //agent = GetComponent<NavMeshAgent>();
         agent.destination = goal.position;
-        agent.destination = key.position; 
 
         Destroy(this.gameObject);
     }

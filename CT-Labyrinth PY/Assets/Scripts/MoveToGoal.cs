@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class MoveToGoal : MonoBehaviour
 {
     public Transform goal;
+    public GameObject door;
     private Animator animator;
     private NavMeshAgent agent;
 
@@ -26,6 +27,14 @@ public class MoveToGoal : MonoBehaviour
         else
         {
             animator.SetBool("isRunning", false);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Key"))
+        {
+            door.SetActive(false);
         }
     }
 }
