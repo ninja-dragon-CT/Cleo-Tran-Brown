@@ -7,15 +7,20 @@ public class End : MonoBehaviour
 {
     public Transform goal;
     private Transform end;
-    private Animator animator;
-    public NavMeshAgent agent;
+    public NavMeshAgent CubeMan;
 
     private void OnCollisionEnter(Collision collision)
     {
-        //animator = GetComponentInChildren<Animator>();
-        //agent = GetComponent<NavMeshAgent>();
-        agent.destination = goal.position;
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            //animator = GetComponentInChildren<Animator>();
+            //agent = GetComponent<NavMeshAgent>();
+            CubeMan.destination = goal.position;
 
-        Destroy(this.gameObject);
+            GameObject.Find("Main Camera").GetComponent<CamFollow>().player = CubeMan.gameObject;
+
+            Destroy(this.gameObject);
+
+        }
     }
 }
