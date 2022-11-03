@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int currentPlayerHealth = 10;
-    public int enemyDamge = 1;
+    public int currentPlayerHealth = 100;
+    public int enemyDamge = 10;
 
     public PlayerExplosionParticles particles;
 
