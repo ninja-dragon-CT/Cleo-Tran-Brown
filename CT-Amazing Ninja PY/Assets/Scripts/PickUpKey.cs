@@ -10,11 +10,15 @@ public class PickUpKey : MonoBehaviour
     public ParticleSystem allParticles;
 
     public GameObject HealthBar;
+    
+    public GameObject background;
 
     private void Start()
     {
         m_renderer = GetComponentInParent<SpriteRenderer>();
     }
+
+  
 
     private void OnTriggerEnter(Collider other)
     {
@@ -23,6 +27,9 @@ public class PickUpKey : MonoBehaviour
         allParticles.Play();
         //HealthBar.GetComponent<LifeHUD>().HealPlayer();
         //Debug.Log("Hit!");
+
+        background.GetComponent<GameManager>().moveToCheckPoint();
+        HealthBar.GetComponent<LifeHUD>().HealPlayer();
     }
 
 }
