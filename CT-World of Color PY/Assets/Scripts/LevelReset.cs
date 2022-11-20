@@ -24,7 +24,7 @@ public class LevelReset : MonoBehaviour
     public void GameOver()
     {
         player.SetActive(false);
-        Invoke("Reload", 6);
+        Invoke("Reload", 3);
         explosion.Play();
     }
 
