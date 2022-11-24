@@ -30,7 +30,7 @@ public class LifeHUD : MonoBehaviour
     public void HurtPlayer()
     {
         lives -= 1;
-        saveData();
+        //saveData();
         HUDRefresh();
     }
 

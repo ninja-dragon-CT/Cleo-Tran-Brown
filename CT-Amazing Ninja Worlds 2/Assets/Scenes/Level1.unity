@@ -412,7 +412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d1a034cecc75704eaf70b1011ce74ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gem: {fileID: 468184293}
+  gemGreen: {fileID: 468184293}
   background: {fileID: 1875767817}
   teleportDestination: Level1_A
 --- !u!4 &79126317 stripped
