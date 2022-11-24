@@ -29,9 +29,13 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.DeleteKey("LIVES_LEFT");
     }
 
+
     private void Update()
     {
-
+        if (Input.GetButton("Cancel"))
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 
     // Set the game over text and display the popup
