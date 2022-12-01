@@ -48,11 +48,12 @@ public class DialogOpen : MonoBehaviour
     {
         if (pHolding.holdValue == clue)
         {
+            dialog = "You found my " + collectibles[clue] + "! Horray!";
             end = true;
         }
         else
         {
-
+            dialog = "No, thats not my " + collectibles[clue] + ",";
         }
     }
 
