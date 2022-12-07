@@ -31,7 +31,59 @@ public class DialogOpen : MonoBehaviour
 
     public void searchDialog()
     {
-        dialog = "Hi! Can you help me find my " + collectibles[clue] + "?";
+        if (clue == 0)
+        {
+            dialog = "Im sad! I wont be able to watch my film, can you help?";
+        }
+
+        if (clue == 1)
+        {
+            dialog = "Oh No! my balloons flew away. Can you help get it back?";
+        }
+
+        if (clue == 2)
+        {
+            dialog = "HELP! IM DROWNING GIVE ME MY LIFE SAVER!";
+        }
+
+        if (clue == 3)
+        {
+            dialog = "My Bull's Eye broke can you get me one?";
+        }
+
+
+        if (clue == 4)
+        {
+            dialog = "HELP! One of the pipes broke and waters flooding out, Please help us.";
+        }
+
+        if (clue == 5)
+        {
+            dialog = "Hi! I lost my keys to my little dirt shack, can you help?";
+        }
+
+        if (clue == 6)
+        {
+            dialog = "Im HANGRY GIMME SOME FISH!";
+        }
+
+        if (clue == 7)
+        {
+            dialog = "My bird is dying from cold, I want a bird house.";
+        }
+
+        if (clue == 8)
+        {
+            dialog = "I need to prank my friend! do you have a red air horn?";
+        }
+
+        if (clue == 9)
+        {
+            dialog = "Im a magician and lost my hat, can you help?";
+        }
+
+
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
