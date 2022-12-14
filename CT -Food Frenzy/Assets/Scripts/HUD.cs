@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class HUD : MonoBehaviour
 {
     public Level level;
-
     public Text remainingText;
     public Text remainingSubtext;
     public Text targetText;
@@ -78,11 +77,32 @@ public class HUD : MonoBehaviour
         remainingText.text = remaining;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetLevelType (Level.LevelType type)
     {
-        
+        switch (type)
+        {
+            case Level.LevelType.MOVES:
+                remainingSubtext.text = "Moves Remaining";
+                targetSubtext.text = "Target Score";
+                break;
+            case Level.LevelType.OBSTACLE:
+                remainingSubtext.text = "Moves Remaining";
+                targetSubtext.text = "Dishes Remaining";
+                break;
+            case Level.LevelType.TIMER:
+                remainingSubtext.text = "Moves Remaining";
+                targetSubtext.text = "Target Score";
+                break;
+        }
     }
 
+    public void OnGameWin(int score)
+    {
+        isGameOver = true;
+    }
 
+    public void OnGameLose()
+    {
+        isGameOver = false;
+    }
 }
