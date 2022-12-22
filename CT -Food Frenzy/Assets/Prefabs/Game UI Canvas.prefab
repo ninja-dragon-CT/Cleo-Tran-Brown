@@ -166,7 +166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 170058243}
   m_Layer: 0
-  m_Name: Score (1)
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -179,9 +179,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 170058242}
-  m_LocalRotation: {x: -0.0001289357, y: 0.005442573, z: 0.10793824, w: 0.9941427}
-  m_LocalPosition: {x: -487.3436, y: 466.87708, z: 7.9291196}
-  m_LocalScale: {x: 2, y: 1.79, z: 1.53}
+  m_LocalRotation: {x: -0.000030282037, y: 0.001278119, z: 0.025348235, w: 0.9996779}
+  m_LocalPosition: {x: -1514.2042, y: 1407.5284, z: 2.6443443}
+  m_LocalScale: {x: 3.596347, y: 3.2187312, z: 2.7512054}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1061681997}
@@ -190,9 +190,9 @@ Transform:
   - {fileID: 161980153}
   - {fileID: 1016872090}
   - {fileID: 217236719}
-  m_Father: {fileID: 527196438}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -0.082, y: 0.618, z: 12.393}
+  m_Father: {fileID: 867216951}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: -0.007, y: 0.146, z: 2.905}
 --- !u!1 &217236718
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,7 +394,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 503936806}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5049746055310829495}
+        m_TargetAssemblyTypeName: GameOver, Assembly-CSharp
+        m_MethodName: OnReplayClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &527196437
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,6 +417,7 @@ GameObject:
   m_Component:
   - component: {fileID: 527196438}
   - component: {fileID: 527196439}
+  - component: {fileID: 5049746055310829495}
   m_Layer: 0
   m_Name: GameOver
   m_TagString: Untagged
@@ -419,17 +432,16 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 527196437}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -859.01184, y: 348, z: 2.0263083}
+  m_LocalRotation: {x: -0.00013310592, y: 0.005618617, z: 0.111429684, w: 0.9937565}
+  m_LocalPosition: {x: -618, y: 109, z: 11.944289}
   m_LocalScale: {x: 1.7981737, y: 1.7981737, z: 1.7981737}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 867216951}
-  - {fileID: 170058243}
   - {fileID: 1679301086}
   m_Father: {fileID: 2284413195562375815}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -0.087, y: 0.638, z: 12.795}
 --- !u!95 &527196439
 Animator:
   serializedVersion: 4
@@ -450,6 +462,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5049746055310829495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527196437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b715ea9703ec044a84fc7ac04db1eb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screenParent: {fileID: 867216950}
+  scoreParent: {fileID: 2284413196153096955}
+  loseText: {fileID: 217236720}
+  scoreText: {fileID: 2284413195127892948}
+  stars:
+  - {fileID: 1061681998}
+  - {fileID: 2284413195478006577}
+  - {fileID: 2284413196470172745}
+  - {fileID: 2284413195699895563}
 --- !u!1 &867216950
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,6 +514,7 @@ RectTransform:
   - {fileID: 994780096}
   - {fileID: 503936804}
   - {fileID: 7017077108569205837}
+  - {fileID: 170058243}
   m_Father: {fileID: 527196438}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -898,17 +932,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1679301085}
-  m_LocalRotation: {x: -0.00012729612, y: 0.0053733443, z: 0.10656545, w: 0.9942912}
-  m_LocalPosition: {x: 0, y: 0, z: -1.1268705}
+  m_LocalRotation: {x: -0.000018362101, y: 0.0007750415, z: 0.015370929, w: 0.9998816}
+  m_LocalPosition: {x: 0, y: 0, z: -1.1268675}
   m_LocalScale: {x: 0.5561198, y: 0.5561198, z: 0.5561198}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 527196438}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: -0.08, y: 0.611, z: 12.234}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -0.003, y: 0.089, z: 1.761}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 451, y: -269}
+  m_AnchoredPosition: {x: 451.00034, y: -269.00015}
   m_SizeDelta: {x: 393.7217, y: 89.9288}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1679301088
@@ -1385,6 +1419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: {fileID: 0}
+  gameOver: {fileID: 5049746055310829495}
   remainingText: {fileID: 2284413196552166501}
   remainingSubtext: {fileID: 2284413195661638403}
   targetText: {fileID: 2284413196312091537}
@@ -2335,4 +2370,16 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 20509478532604291}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5049746055310829495}
+        m_TargetAssemblyTypeName: GameOver, Assembly-CSharp
+        m_MethodName: OnDoneClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

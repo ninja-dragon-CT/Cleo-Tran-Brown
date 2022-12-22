@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class HUD : MonoBehaviour
 {
     public Level level;
+    public GameOver gameOver;
+
     public Text remainingText;
     public Text remainingSubtext;
     public Text targetText;
@@ -98,11 +100,11 @@ public class HUD : MonoBehaviour
 
     public void OnGameWin(int score)
     {
-        isGameOver = true;
+        gameOver.ShowWin(score, starIndex);
     }
 
     public void OnGameLose()
     {
-        isGameOver = false;
+        gameOver.ShowLose();
     }
 }

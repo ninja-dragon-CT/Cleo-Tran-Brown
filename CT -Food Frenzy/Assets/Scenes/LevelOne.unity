@@ -626,6 +626,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 170058242, guid: ecc652a51c8511a408d2f07ae26a05b0, type: 3}
+      propertyPath: m_Name
+      value: Score
+      objectReference: {fileID: 0}
+    - target: {fileID: 170058242, guid: ecc652a51c8511a408d2f07ae26a05b0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1679301085, guid: ecc652a51c8511a408d2f07ae26a05b0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2284413195562375811, guid: ecc652a51c8511a408d2f07ae26a05b0, type: 3}
       propertyPath: m_Name
       value: Game UI Canvas
