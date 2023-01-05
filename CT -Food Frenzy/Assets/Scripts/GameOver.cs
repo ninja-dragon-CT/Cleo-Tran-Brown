@@ -17,7 +17,7 @@ public class GameOver : MonoBehaviour
     {
         screenParent.SetActive(false);
 
-        for (int i = 0; 1 < stars.Length; i++)
+        for (int i = 0; i < stars.Length; i++)
         {
             stars[i].enabled = false;
         }
@@ -28,7 +28,7 @@ public class GameOver : MonoBehaviour
     public void ShowLose()
     {
         screenParent.SetActive(true);
-        scoreParent.SetActive(false);
+        scoreParent.SetActive(true);
         loseText.enabled = true;
 
         if (animator)
