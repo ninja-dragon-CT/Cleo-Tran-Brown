@@ -596,7 +596,7 @@ GameObject:
   - component: {fileID: 667653544}
   - component: {fileID: 667653543}
   m_Layer: 0
-  m_Name: LevelSelectButton
+  m_Name: LevelSelectButton(2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -669,7 +669,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 667653544}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1961604422}
+        m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
+        m_MethodName: OnButtonSelect3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &667653544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1205,7 +1217,7 @@ GameObject:
   - component: {fileID: 1510056032}
   - component: {fileID: 1510056031}
   m_Layer: 0
-  m_Name: LevelSelectButton
+  m_Name: LevelSelectButton(1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1278,7 +1290,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1510056032}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1961604422}
+        m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
+        m_MethodName: OnButtonSelect2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1510056032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1483,7 +1507,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1673900387}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1961604422}
+        m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
+        m_MethodName: OnButtonSelect1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1673900387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1710,6 +1746,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b121fad3d66ed64ebc00fdfef1cab50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttons:
+  - gameObject: {fileID: 1673900384}
+    playerPrefKey: LevelOne
+  - gameObject: {fileID: 1510056029}
+    playerPrefKey: LevelTwo
+  - gameObject: {fileID: 667653541}
+    playerPrefKey: LevelThree
 --- !u!114 &1961604423
 MonoBehaviour:
   m_ObjectHideFlags: 0

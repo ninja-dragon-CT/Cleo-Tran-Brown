@@ -47,7 +47,7 @@ public class GameOver : MonoBehaviour
 
         if (animator)
         {
-            animator.Play("GameOverDisplay");
+            animator.Play("GameOverDisplay ");
         }
 
         StartCoroutine(ShowWinCouroutine(starCount));
@@ -78,11 +78,14 @@ public class GameOver : MonoBehaviour
     public void OnReplayClicked()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Debug.Log("REPLAY ERROR");
     }
 
     public void OnDoneClicked()
     {
+        SceneManager.LoadScene(0);
 
+        Debug.Log("DONE ERROR");
     }
 }
 
