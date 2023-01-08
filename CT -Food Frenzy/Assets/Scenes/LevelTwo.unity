@@ -221,6 +221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grid: {fileID: 581336197}
+  hud: {fileID: 1843609576}
   score1Star: 25000
   score2Star: 27000
   score3Star: 30000
@@ -664,6 +665,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1679301085, guid: ecc652a51c8511a408d2f07ae26a05b0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2284413195562375811, guid: ecc652a51c8511a408d2f07ae26a05b0, type: 3}
       propertyPath: m_Name
       value: Game UI Canvas
@@ -752,5 +757,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6681171162783329945, guid: ecc652a51c8511a408d2f07ae26a05b0, type: 3}
+      propertyPath: level
+      value: 
+      objectReference: {fileID: 245619825}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ecc652a51c8511a408d2f07ae26a05b0, type: 3}
+--- !u!114 &1843609576 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6681171162783329945, guid: ecc652a51c8511a408d2f07ae26a05b0, type: 3}
+  m_PrefabInstance: {fileID: 1162314991}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86675aac6e45af747a33d811f8325ee9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

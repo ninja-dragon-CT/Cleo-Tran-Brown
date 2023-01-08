@@ -47,11 +47,11 @@ public class HUD : MonoBehaviour
 
         int visibleStar = 0;
 
-        if (score >= level.score1Star && score < level.score2Star)
+        if (score >= level.score1Star && score < level.score1Star)
         {
             visibleStar = 1;
         }
-        else if (score >= level.score2Star && score < level.score3Star)
+        else if (score >= level.score2Star && score < level.score2Star)
         {
             visibleStar = 2;
         }
